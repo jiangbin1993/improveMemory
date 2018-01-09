@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		345BCFEC1FBE910A0088CA32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BCFEB1FBE910A0088CA32 /* AppDelegate.m */; };
+		345BCFEF1FBE910A0088CA32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BCFEE1FBE910A0088CA32 /* ViewController.m */; };
+		345BCFF21FBE910A0088CA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345BCFF01FBE910A0088CA32 /* Main.storyboard */; };
+		345BCFF41FBE910A0088CA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345BCFF31FBE910A0088CA32 /* Assets.xcassets */; };
+		345BCFF71FBE910A0088CA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345BCFF51FBE910A0088CA32 /* LaunchScreen.storyboard */; };
+		345BCFFA1FBE910A0088CA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BCFF91FBE910A0088CA32 /* main.m */; };
+		345BD0041FBE910A0088CA32 /* improve_memoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BD0031FBE910A0088CA32 /* improve_memoryUITests.m */; };
+		3463501F1FFCE01500D82698 /* UIView+LayoutExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463501D1FFCE01500D82698 /* UIView+LayoutExtension.m */; };
+		346350261FFCE56400D82698 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 346350251FFCE56400D82698 /* UIColor+Category.m */; };
+		34C0FF231FDA797900FEB9AE /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0FF221FDA797900FEB9AE /* Global.m */; };
+		34E0CA771FE105A700B9CEFC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0CA761FE105A700B9CEFC /* BaseViewController.m */; };
+		34E0CA7A1FE105D000B9CEFC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0CA791FE105D000B9CEFC /* BaseModel.m */; };
+		34F65E6C200464F10090D99F /* NSString+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F65E6B200464F10090D99F /* NSString+extension.m */; };
+		34F65E6F200466110090D99F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F65E6E200466110090D99F /* TabBarViewController.m */; };
+		34F65E75200466F50090D99F /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F65E72200466F50090D99F /* UserViewController.m */; };
+		34F65E782004670A0090D99F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F65E772004670A0090D99F /* GameViewController.m */; };
+		34F65E7B200467150090D99F /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F65E7A200467150090D99F /* RecordViewController.m */; };
+		3E60090CB2E3A5805D36521C /* libPods-improve memory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1973BF781072E830038F873E /* libPods-improve memory.a */; };
+		C4116C7FD710E82D973399C9 /* libPods-improve memoryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750B8DECAD5CDF57CC7802C /* libPods-improve memoryUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		345BD0001FBE910A0088CA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BCFDF1FBE910A0088CA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 345BCFE61FBE910A0088CA32;
+			remoteInfo = "improve memory";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1973BF781072E830038F873E /* libPods-improve memory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-improve memory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2750B8DECAD5CDF57CC7802C /* libPods-improve memoryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-improve memoryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		345BCFE71FBE910A0088CA32 /* improve memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "improve memory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		345BCFEA1FBE910A0088CA32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		345BCFEB1FBE910A0088CA32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		345BCFED1FBE910A0088CA32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		345BCFEE1FBE910A0088CA32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		345BCFF11FBE910A0088CA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		345BCFF31FBE910A0088CA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		345BCFF61FBE910A0088CA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		345BCFF81FBE910A0088CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345BCFF91FBE910A0088CA32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345BCFFF1FBE910A0088CA32 /* improve memoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "improve memoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		345BD0031FBE910A0088CA32 /* improve_memoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = improve_memoryUITests.m; sourceTree = "<group>"; };
+		345BD0051FBE910A0088CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345BD0101FBEC8C00088CA32 /* PrefixHeaderDebug.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderDebug.pch; sourceTree = "<group>"; };
+		345BD0111FBEC8D70088CA32 /* PrefixHeaderRelease.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderRelease.pch; sourceTree = "<group>"; };
+		3463501D1FFCE01500D82698 /* UIView+LayoutExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutExtension.m"; sourceTree = "<group>"; };
+		3463501E1FFCE01500D82698 /* UIView+LayoutExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutExtension.h"; sourceTree = "<group>"; };
+		346350221FFCE4C600D82698 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		346350231FFCE51700D82698 /* MacroColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroColors.h; sourceTree = "<group>"; };
+		346350241FFCE56400D82698 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		346350251FFCE56400D82698 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		34C0FF171FD93F0900FEB9AE /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		34C0FF211FDA797900FEB9AE /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		34C0FF221FDA797900FEB9AE /* Global.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		34E0CA751FE105A700B9CEFC /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		34E0CA761FE105A700B9CEFC /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		34E0CA781FE105D000B9CEFC /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		34E0CA791FE105D000B9CEFC /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		34F65E6A200464F10090D99F /* NSString+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+extension.h"; sourceTree = "<group>"; };
+		34F65E6B200464F10090D99F /* NSString+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+extension.m"; sourceTree = "<group>"; };
+		34F65E6D200466110090D99F /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		34F65E6E200466110090D99F /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		34F65E71200466F50090D99F /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		34F65E72200466F50090D99F /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		34F65E762004670A0090D99F /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		34F65E772004670A0090D99F /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		34F65E79200467150090D99F /* RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		34F65E7A200467150090D99F /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		4DC9A2C7324EA51B838B7312 /* Pods-improve memoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-improve memoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-improve memoryUITests/Pods-improve memoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EB1B5CAF9FAE40F34D7A6D6 /* Pods-improve memory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-improve memory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-improve memory/Pods-improve memory.debug.xcconfig"; sourceTree = "<group>"; };
+		5F104E02E9F2B7F6B3956364 /* Pods-improve memory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-improve memory.release.xcconfig"; path = "Pods/Target Support Files/Pods-improve memory/Pods-improve memory.release.xcconfig"; sourceTree = "<group>"; };
+		8B68ED39531A7E994919A75A /* Pods-improve memoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-improve memoryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-improve memoryUITests/Pods-improve memoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		345BCFE41FBE910A0088CA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E60090CB2E3A5805D36521C /* libPods-improve memory.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345BCFFC1FBE910A0088CA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4116C7FD710E82D973399C9 /* libPods-improve memoryUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0079AEF67EA9C2B46D30FDFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1973BF781072E830038F873E /* libPods-improve memory.a */,
+				2750B8DECAD5CDF57CC7802C /* libPods-improve memoryUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		345BCFDE1FBE910A0088CA32 = {
+			isa = PBXGroup;
+			children = (
+				345BCFE91FBE910A0088CA32 /* improve memory */,
+				345BD0021FBE910A0088CA32 /* improve memoryUITests */,
+				345BCFE81FBE910A0088CA32 /* Products */,
+				8007576A3DC0528EC2BC3A5E /* Pods */,
+				0079AEF67EA9C2B46D30FDFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		345BCFE81FBE910A0088CA32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345BCFE71FBE910A0088CA32 /* improve memory.app */,
+				345BCFFF1FBE910A0088CA32 /* improve memoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		345BCFE91FBE910A0088CA32 /* improve memory */ = {
+			isa = PBXGroup;
+			children = (
+				346350201FFCE47A00D82698 /* Macros */,
+				3463501C1FFCDFEF00D82698 /* Categories */,
+				3463501B1FFCDFA900D82698 /* Tool */,
+				34E0CA7B1FE106C500B9CEFC /* Classes */,
+				34E0CA741FE1058400B9CEFC /* Base */,
+				345BCFEA1FBE910A0088CA32 /* AppDelegate.h */,
+				345BCFEB1FBE910A0088CA32 /* AppDelegate.m */,
+				345BCFED1FBE910A0088CA32 /* ViewController.h */,
+				345BCFEE1FBE910A0088CA32 /* ViewController.m */,
+				345BD00E1FBEC6E90088CA32 /* common */,
+				345BCFF01FBE910A0088CA32 /* Main.storyboard */,
+				345BCFF31FBE910A0088CA32 /* Assets.xcassets */,
+				345BCFF51FBE910A0088CA32 /* LaunchScreen.storyboard */,
+				345BCFF81FBE910A0088CA32 /* Info.plist */,
+				345BCFF91FBE910A0088CA32 /* main.m */,
+			);
+			path = "improve memory";
+			sourceTree = "<group>";
+		};
+		345BD0021FBE910A0088CA32 /* improve memoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				345BD0031FBE910A0088CA32 /* improve_memoryUITests.m */,
+				345BD0051FBE910A0088CA32 /* Info.plist */,
+			);
+			path = "improve memoryUITests";
+			sourceTree = "<group>";
+		};
+		345BD00E1FBEC6E90088CA32 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				345BD0101FBEC8C00088CA32 /* PrefixHeaderDebug.pch */,
+				345BD0111FBEC8D70088CA32 /* PrefixHeaderRelease.pch */,
+				34C0FF171FD93F0900FEB9AE /* Const.h */,
+				34C0FF211FDA797900FEB9AE /* Global.h */,
+				34C0FF221FDA797900FEB9AE /* Global.m */,
+				34F65E6D200466110090D99F /* TabBarViewController.h */,
+				34F65E6E200466110090D99F /* TabBarViewController.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		3463501B1FFCDFA900D82698 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3463501C1FFCDFEF00D82698 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				34F65E6A200464F10090D99F /* NSString+extension.h */,
+				34F65E6B200464F10090D99F /* NSString+extension.m */,
+				346350241FFCE56400D82698 /* UIColor+Category.h */,
+				346350251FFCE56400D82698 /* UIColor+Category.m */,
+				3463501E1FFCE01500D82698 /* UIView+LayoutExtension.h */,
+				3463501D1FFCE01500D82698 /* UIView+LayoutExtension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		346350201FFCE47A00D82698 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				346350221FFCE4C600D82698 /* Macro.h */,
+				346350231FFCE51700D82698 /* MacroColors.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		34E0CA741FE1058400B9CEFC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				34E0CA751FE105A700B9CEFC /* BaseViewController.h */,
+				34E0CA761FE105A700B9CEFC /* BaseViewController.m */,
+				34E0CA781FE105D000B9CEFC /* BaseModel.h */,
+				34E0CA791FE105D000B9CEFC /* BaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		34E0CA7B1FE106C500B9CEFC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				34F65E74200466F50090D99F /* 记录 */,
+				34F65E70200466F50090D99F /* 用户 */,
+				34F65E73200466F50090D99F /* 游戏 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		34F65E70200466F50090D99F /* 用户 */ = {
+			isa = PBXGroup;
+			children = (
+				34F65E71200466F50090D99F /* UserViewController.h */,
+				34F65E72200466F50090D99F /* UserViewController.m */,
+			);
+			path = "用户";
+			sourceTree = "<group>";
+		};
+		34F65E73200466F50090D99F /* 游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				34F65E762004670A0090D99F /* GameViewController.h */,
+				34F65E772004670A0090D99F /* GameViewController.m */,
+			);
+			path = "游戏";
+			sourceTree = "<group>";
+		};
+		34F65E74200466F50090D99F /* 记录 */ = {
+			isa = PBXGroup;
+			children = (
+				34F65E79200467150090D99F /* RecordViewController.h */,
+				34F65E7A200467150090D99F /* RecordViewController.m */,
+			);
+			path = "记录";
+			sourceTree = "<group>";
+		};
+		8007576A3DC0528EC2BC3A5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EB1B5CAF9FAE40F34D7A6D6 /* Pods-improve memory.debug.xcconfig */,
+				5F104E02E9F2B7F6B3956364 /* Pods-improve memory.release.xcconfig */,
+				4DC9A2C7324EA51B838B7312 /* Pods-improve memoryUITests.debug.xcconfig */,
+				8B68ED39531A7E994919A75A /* Pods-improve memoryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		345BCFE61FBE910A0088CA32 /* improve memory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345BD0081FBE910A0088CA32 /* Build configuration list for PBXNativeTarget "improve memory" */;
+			buildPhases = (
+				272C575D8F926ABE3E1B3D88 /* [CP] Check Pods Manifest.lock */,
+				345BCFE31FBE910A0088CA32 /* Sources */,
+				345BCFE41FBE910A0088CA32 /* Frameworks */,
+				345BCFE51FBE910A0088CA32 /* Resources */,
+				9EF0F9370377154A6F3EE5E2 /* [CP] Embed Pods Frameworks */,
+				5E431E39537E30842A8B3A70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "improve memory";
+			productName = "improve memory";
+			productReference = 345BCFE71FBE910A0088CA32 /* improve memory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		345BCFFE1FBE910A0088CA32 /* improve memoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345BD00B1FBE910A0088CA32 /* Build configuration list for PBXNativeTarget "improve memoryUITests" */;
+			buildPhases = (
+				E86FA4BEDC4935E6AC7EE378 /* [CP] Check Pods Manifest.lock */,
+				345BCFFB1FBE910A0088CA32 /* Sources */,
+				345BCFFC1FBE910A0088CA32 /* Frameworks */,
+				345BCFFD1FBE910A0088CA32 /* Resources */,
+				E3CD8A999024E583DD930DEB /* [CP] Embed Pods Frameworks */,
+				55A29F852045F70123416E1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				345BD0011FBE910A0088CA32 /* PBXTargetDependency */,
+			);
+			name = "improve memoryUITests";
+			productName = "improve memoryUITests";
+			productReference = 345BCFFF1FBE910A0088CA32 /* improve memoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		345BCFDF1FBE910A0088CA32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "斌";
+				TargetAttributes = {
+					345BCFE61FBE910A0088CA32 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					345BCFFE1FBE910A0088CA32 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 345BCFE61FBE910A0088CA32;
+					};
+				};
+			};
+			buildConfigurationList = 345BCFE21FBE910A0088CA32 /* Build configuration list for PBXProject "improve memory" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 345BCFDE1FBE910A0088CA32;
+			productRefGroup = 345BCFE81FBE910A0088CA32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				345BCFE61FBE910A0088CA32 /* improve memory */,
+				345BCFFE1FBE910A0088CA32 /* improve memoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		345BCFE51FBE910A0088CA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345BCFF71FBE910A0088CA32 /* LaunchScreen.storyboard in Resources */,
+				345BCFF41FBE910A0088CA32 /* Assets.xcassets in Resources */,
+				345BCFF21FBE910A0088CA32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345BCFFD1FBE910A0088CA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		272C575D8F926ABE3E1B3D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55A29F852045F70123416E1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-improve memoryUITests/Pods-improve memoryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E431E39537E30842A8B3A70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-improve memory/Pods-improve memory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF0F9370377154A6F3EE5E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-improve memory/Pods-improve memory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CD8A999024E583DD930DEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-improve memoryUITests/Pods-improve memoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E86FA4BEDC4935E6AC7EE378 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		345BCFE31FBE910A0088CA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345BCFEF1FBE910A0088CA32 /* ViewController.m in Sources */,
+				34E0CA771FE105A700B9CEFC /* BaseViewController.m in Sources */,
+				345BCFFA1FBE910A0088CA32 /* main.m in Sources */,
+				34E0CA7A1FE105D000B9CEFC /* BaseModel.m in Sources */,
+				34F65E7B200467150090D99F /* RecordViewController.m in Sources */,
+				34F65E782004670A0090D99F /* GameViewController.m in Sources */,
+				34C0FF231FDA797900FEB9AE /* Global.m in Sources */,
+				34F65E6C200464F10090D99F /* NSString+extension.m in Sources */,
+				3463501F1FFCE01500D82698 /* UIView+LayoutExtension.m in Sources */,
+				34F65E75200466F50090D99F /* UserViewController.m in Sources */,
+				34F65E6F200466110090D99F /* TabBarViewController.m in Sources */,
+				345BCFEC1FBE910A0088CA32 /* AppDelegate.m in Sources */,
+				346350261FFCE56400D82698 /* UIColor+Category.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345BCFFB1FBE910A0088CA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345BD0041FBE910A0088CA32 /* improve_memoryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		345BD0011FBE910A0088CA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 345BCFE61FBE910A0088CA32 /* improve memory */;
+			targetProxy = 345BD0001FBE910A0088CA32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		345BCFF01FBE910A0088CA32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345BCFF11FBE910A0088CA32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		345BCFF51FBE910A0088CA32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345BCFF61FBE910A0088CA32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		345BD0061FBE910A0088CA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "improve memory/common/PrefixHeaderDebug.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		345BD0071FBE910A0088CA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "improve memory/common/PrefixHeaderRelease.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		345BD0091FBE910A0088CA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB1B5CAF9FAE40F34D7A6D6 /* Pods-improve memory.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NSAUY85W8H;
+				INFOPLIST_FILE = "improve memory/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bin.www.improve-memory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		345BD00A1FBE910A0088CA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F104E02E9F2B7F6B3956364 /* Pods-improve memory.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NSAUY85W8H;
+				INFOPLIST_FILE = "improve memory/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bin.www.improve-memory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		345BD00C1FBE910A0088CA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC9A2C7324EA51B838B7312 /* Pods-improve memoryUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "improve memoryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bin.www.improve-memoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "improve memory";
+			};
+			name = Debug;
+		};
+		345BD00D1FBE910A0088CA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B68ED39531A7E994919A75A /* Pods-improve memoryUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "improve memoryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bin.www.improve-memoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "improve memory";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		345BCFE21FBE910A0088CA32 /* Build configuration list for PBXProject "improve memory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345BD0061FBE910A0088CA32 /* Debug */,
+				345BD0071FBE910A0088CA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345BD0081FBE910A0088CA32 /* Build configuration list for PBXNativeTarget "improve memory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345BD0091FBE910A0088CA32 /* Debug */,
+				345BD00A1FBE910A0088CA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345BD00B1FBE910A0088CA32 /* Build configuration list for PBXNativeTarget "improve memoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345BD00C1FBE910A0088CA32 /* Debug */,
+				345BD00D1FBE910A0088CA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 345BCFDF1FBE910A0088CA32 /* Project object */;
+}

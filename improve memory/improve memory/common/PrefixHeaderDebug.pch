@@ -1,0 +1,21 @@
+//
+//  PrefixHeaderDebug.pch
+//  improve memory
+//
+//  Created by 斌 on 2017/11/17.
+//  Copyright © 2017年 斌. All rights reserved.
+//
+
+#ifndef PrefixHeaderDebug_pch
+#define PrefixHeaderDebug_pch
+
+#import "Masonry.h"
+#import "Const.h"
+#import "Macro.h"
+#import "Global.h"
+#import "NSString+extension.h"
+#import "UIView+LayoutExtension.h"
+#import "MacroColors.h"
+#import "UIColor+Category.h"
+
+#endif /* PrefixHeaderDebug_pch */

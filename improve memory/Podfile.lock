@@ -1,0 +1,18 @@
+PODS:
+  - ACAlertController (1.0.0)
+  - Masonry (1.0.2)
+  - PPNumberButton (0.7.0)
+
+DEPENDENCIES:
+  - ACAlertController
+  - Masonry
+  - PPNumberButton
+
+SPEC CHECKSUMS:
+  ACAlertController: 10f0455c3e1691a6197b5cd0d96d6f9a03c82763
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  PPNumberButton: a053cde152b0e683302ce41a4755bfa02e1b3a83
+
+PODFILE CHECKSUM: 86232e01ac2471956b1fde310d9069c862bb805f
+
+COCOAPODS: 1.3.0.beta.1
