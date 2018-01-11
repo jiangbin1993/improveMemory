@@ -16,6 +16,7 @@
 		345BD0041FBE910A0088CA32 /* improve_memoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BD0031FBE910A0088CA32 /* improve_memoryUITests.m */; };
 		3463501F1FFCE01500D82698 /* UIView+LayoutExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463501D1FFCE01500D82698 /* UIView+LayoutExtension.m */; };
 		346350261FFCE56400D82698 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 346350251FFCE56400D82698 /* UIColor+Category.m */; };
+		3492ADEE2007074B00E964BC /* GameRulerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3492ADED2007074B00E964BC /* GameRulerViewController.m */; };
 		34C0FF231FDA797900FEB9AE /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C0FF221FDA797900FEB9AE /* Global.m */; };
 		34E0CA771FE105A700B9CEFC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0CA761FE105A700B9CEFC /* BaseViewController.m */; };
 		34E0CA7A1FE105D000B9CEFC /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E0CA791FE105D000B9CEFC /* BaseModel.m */; };
@@ -62,6 +63,8 @@
 		346350231FFCE51700D82698 /* MacroColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroColors.h; sourceTree = "<group>"; };
 		346350241FFCE56400D82698 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
 		346350251FFCE56400D82698 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		3492ADEC2007074B00E964BC /* GameRulerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameRulerViewController.h; sourceTree = "<group>"; };
+		3492ADED2007074B00E964BC /* GameRulerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameRulerViewController.m; sourceTree = "<group>"; };
 		34C0FF171FD93F0900FEB9AE /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		34C0FF211FDA797900FEB9AE /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		34C0FF221FDA797900FEB9AE /* Global.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 			children = (
 				34F65E762004670A0090D99F /* GameViewController.h */,
 				34F65E772004670A0090D99F /* GameViewController.m */,
+				3492ADEC2007074B00E964BC /* GameRulerViewController.h */,
+				3492ADED2007074B00E964BC /* GameRulerViewController.m */,
 			);
 			path = "游戏";
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 				34F65E6F200466110090D99F /* TabBarViewController.m in Sources */,
 				345BCFEC1FBE910A0088CA32 /* AppDelegate.m in Sources */,
 				346350261FFCE56400D82698 /* UIColor+Category.m in Sources */,
+				3492ADEE2007074B00E964BC /* GameRulerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

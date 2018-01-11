@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navTitle = @"记录";
+    [self createNav];
+    self.navTitleLabel.text = @"记录";
 }
 
 - (void)didReceiveMemoryWarning {

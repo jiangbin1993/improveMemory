@@ -9,14 +9,12 @@
 #ifndef Macro_h
 #define Macro_h
 
-
-
-
 // 屏幕宽高
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+// 根据6s机型设计稿适配
 #define k6sWidth(w)                     ((w) / 750.0 * kScreenWidth)
 #define k6sHeight(h)                    ((h) / 1334.0 * kScreenHeight)
 
@@ -26,6 +24,9 @@
 #define kNavigationBarHeight            44
 
 #define kNavigationHeight               (kToolBarHeight + kNavigationBarHeight)
+
+#define kTabbarHeight                   self.tabBarController.tabBar.frame.size.height
+
 
 // 字体
 #define JJFont(size) (kScreenWidth / 750.0 * size)

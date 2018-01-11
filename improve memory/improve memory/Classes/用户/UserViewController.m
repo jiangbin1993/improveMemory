@@ -22,14 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    self.navTitle = @"用户";
-}
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"%@",self.navTitle);
-    self.navTitle = @"哈哈";
-    
+    [self createNav];
+    self.navTitleLabel.text = @"用户";
 }
 
 - (void)didReceiveMemoryWarning {

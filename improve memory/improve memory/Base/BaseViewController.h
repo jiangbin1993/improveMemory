@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController
-@property(nonatomic,strong) NSString *navTitle;
+
+@property (nonatomic,weak) UIButton *rightBtn;
+@property (nonatomic,weak) UIButton *leftBtn;
+@property (nonatomic,weak) UIView *navView;
+@property (nonatomic,weak) UILabel *navTitleLabel;
+
+- (void)createNav;
+
 @end

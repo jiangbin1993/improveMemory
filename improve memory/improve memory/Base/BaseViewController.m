@@ -8,32 +8,11 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController (){
-    NSString *_navTitle;
-}
-
-@property (nonatomic,weak) UIView *navView;
-
-@property (nonatomic,weak) UILabel *navTitleLabel;
+@interface BaseViewController ()
 
 @end
 
 @implementation BaseViewController
-
-- (NSString *)navTitle{
-    if (!self.navTitleLabel) {
-        return _navTitle;
-    }
-    return self.navTitleLabel.text;
-}
-
-- (void)setNavTitle:(NSString *)navTitle{
-    if (!self.navTitleLabel) {
-        _navTitle = navTitle;
-        return;
-    }
-    self.navTitleLabel.text = navTitle;
-}
 
 
 - (void)viewDidLoad {
@@ -41,7 +20,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self createNav];
+//    [self createNav];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:tap];
@@ -50,8 +29,7 @@
 
 // 创建“导航栏”
 - (void)createNav{
-    // 在主线程异步加载，使下面的方法最后执行，防止其他的控件挡住了导航栏
-    dispatch_async(dispatch_get_main_queue(), ^{
+    
         // 隐藏系统导航栏
         self.navigationController.navigationBar.hidden = YES;
         // 创建假的导航栏
@@ -66,28 +44,37 @@
         
         // 创建导航栏的titleLabel
         UILabel *titleLabel = [[UILabel alloc] init];
-        titleLabel.text = self.navTitle;
-        [titleLabel sizeToFit];
-        titleLabel.frame = CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - titleLabel.frame.size.width / 2, 0, titleLabel.frame.size.width, kNavigationBarHeight);
+    titleLabel.textColor = [UIColor colorWithHexString:UI_NAVIGATION_TEXT_COLOR];
+    titleLabel.font = [UIFont systemFontOfSize:JJFont(35)];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.width = kScreenWidth / 2;
+    titleLabel.height = 30;
+        titleLabel.centerX = navView.width / 2;
+        titleLabel.endY = navView.height - 10;
         [navView addSubview:titleLabel];
         self.navTitleLabel = titleLabel;
         
         // 创建导航栏右边按钮
         UIButton *right= [UIButton buttonWithType:UIButtonTypeSystem];
-        [right setTitle:@"下一页" forState:UIControlStateNormal];
-        right.frame = CGRectMake(300, 0, 100, 44);
-        right.endY = navView.height;
-        [right addTarget:self action:@selector(nextAction) forControlEvents:UIControlEventTouchUpInside];
+    [right setTitleColor:[UIColor colorWithHexString:UI_NAVIGATION_TEXT_COLOR] forState:UIControlStateNormal];
+        [right addTarget:self action:@selector(rightBtnAction) forControlEvents:UIControlEventTouchUpInside];
         [navView addSubview:right];
+        self.rightBtn = right;
         
         // 创建导航栏左按钮
         UIButton *left= [UIButton buttonWithType:UIButtonTypeSystem];
-        [left setTitle:@"上一页" forState:UIControlStateNormal];
-        [left addTarget:self action:@selector(preAction) forControlEvents:UIControlEventTouchUpInside];
+        [left addTarget:self action:@selector(leftBtnAction) forControlEvents:UIControlEventTouchUpInside];
         [navView addSubview:left];
-        left.frame = CGRectMake(0, 0, 100, 44);
-        left.endY = navView.height;
-    });
+    [left setTitleColor:[UIColor colorWithHexString:UI_NAVIGATION_TEXT_COLOR] forState:UIControlStateNormal];
+        self.leftBtn = left;
+}
+
+- (void)leftBtnAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)rightBtnAction{
+    
 }
 
 

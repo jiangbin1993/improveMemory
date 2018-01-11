@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "PPNumberButton.h"
+#import "GameRulerViewController.h"
 
 @interface GameViewController ()
 // 第一个view
@@ -64,7 +65,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navTitle = @"游戏";
+    self.navTitleLabel.text = @"游戏";
     
     self.numberCount = 10;
     
@@ -75,13 +76,28 @@
 - (void)createUI{
     
     self.view.backgroundColor = [UIColor blackColor];
+   
+    [self createNavigation];
+    
     //    第一个view
-    self.firstView = [[UIView alloc] init];
+    [self createFirstView];
+    
+}
+
+- (void)createNavigation{
+    
+    [self createNav];
+    self.navTitleLabel.text = @"游戏";
+    [self.rightBtn setTitle:@"游戏规则" forState:UIControlStateNormal];
+    [self.rightBtn sizeToFit];
+    self.rightBtn.centerY = self.navTitleLabel.centerY;
+    self.rightBtn.endX = self.navView.width - 10;
+}
+
+// 创建第一个view
+- (void)createFirstView{
+    self.firstView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight - kTabbarHeight)];
     [self.view addSubview:_firstView];
-    [_firstView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.size.equalTo(self.view);
-    }];
     
     
     PPNumberButton *numberButton = [[PPNumberButton alloc] initWithFrame:CGRectMake(100, 100, 90, 26)];
@@ -147,16 +163,14 @@
     [answerBtn setTitle:@"提前答题" forState:UIControlStateNormal];
     [answerBtn addTarget:self action:@selector(answerAction) forControlEvents:UIControlEventTouchUpInside];
     [answerBtn sizeToFit];
-    answerBtn.endY = kScreenHeight - kNavigationHeight - self.tabBarController.tabBar.height;
+    answerBtn.endY = _firstView.height - 30;
     answerBtn.centerX = kScreenWidth / 2;
     [_firstView addSubview:answerBtn];
-    
-    
 }
 
 // 创建第二个view
 - (void)createSecondView{
-    UIView *secondView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight)];
+    UIView *secondView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight - kTabbarHeight)];
     secondView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:secondView];
     self.secondView = secondView;
@@ -207,7 +221,7 @@
 
 // 创建第三个view
 - (void)createThirdView{
-    UIView *thirdView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight)];
+    UIView *thirdView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight - kTabbarHeight)];
     thirdView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:thirdView];
     self.thirdView = thirdView;
@@ -259,7 +273,7 @@
 
 // 创建第四个view
 - (void)createForthView{
-    UIView *forthView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight)];
+    UIView *forthView = [[UIView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, kScreenHeight - kNavigationHeight - kTabbarHeight)];
     forthView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:forthView];
     self.forthView = forthView;
@@ -294,6 +308,12 @@
         make.width.mas_equalTo(80);
     }];
     
+}
+
+- (void)rightBtnAction{
+    GameRulerViewController *vc = [[GameRulerViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 // 开始按钮方法

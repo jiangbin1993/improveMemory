@@ -9,6 +9,8 @@
 #ifndef MacroColors_h
 #define MacroColors_h
 
-#define UI_TEXT_COLOR_BLACK     @"323232"
+#define UI_NAVIGATION_TEXT_COLOR       UI_TEXT_COLOR_BLACK
+
+#define UI_TEXT_COLOR_BLACK            @"#323232"
 
 #endif /* MacroColors_h */
