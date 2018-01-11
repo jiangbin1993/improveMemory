@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self createNav];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
@@ -54,9 +56,13 @@
         self.navigationController.navigationBar.hidden = YES;
         // 创建假的导航栏
         UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, kNavigationHeight)];
-        navView.backgroundColor = [UIColor greenColor];
+        navView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:navView];
         self.navView = navView;
+        navView.layer.shadowColor = [[UIColor grayColor] CGColor];
+        navView.layer.shadowOffset = CGSizeMake(0, 2);
+        navView.layer.shadowRadius = 5;
+        navView.layer.shadowOpacity = .5;
         
         // 创建导航栏的titleLabel
         UILabel *titleLabel = [[UILabel alloc] init];
@@ -70,6 +76,7 @@
         UIButton *right= [UIButton buttonWithType:UIButtonTypeSystem];
         [right setTitle:@"下一页" forState:UIControlStateNormal];
         right.frame = CGRectMake(300, 0, 100, 44);
+        right.endY = navView.height;
         [right addTarget:self action:@selector(nextAction) forControlEvents:UIControlEventTouchUpInside];
         [navView addSubview:right];
         
@@ -79,6 +86,7 @@
         [left addTarget:self action:@selector(preAction) forControlEvents:UIControlEventTouchUpInside];
         [navView addSubview:left];
         left.frame = CGRectMake(0, 0, 100, 44);
+        left.endY = navView.height;
     });
 }
 

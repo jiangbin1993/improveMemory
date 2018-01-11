@@ -20,8 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setChildControllerWithClassName:@"HomeViewController" title:@"" imageName:@"tab-radio" selectImageName:@"tab-radio-sel"];
+    [self setChildControllerWithClassName:@"GameViewController" title:@"游戏" imageName:@"game_normal" selectImageName:@"game_selected"];
     
+    [self setChildControllerWithClassName:@"RecordViewController" title:@"记录" imageName:@"record_normal" selectImageName:@"record_selected"];
+    
+    [self setChildControllerWithClassName:@"UserViewController" title:@"用户" imageName:@"user_normal" selectImageName:@"user_selected"];
 }
 
 

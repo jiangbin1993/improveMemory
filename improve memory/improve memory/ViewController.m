@@ -183,7 +183,7 @@
         make.height.mas_equalTo(30);
         make.left.offset(10);
         make.right.offset(-10);
-        make.top.mas_equalTo(button.mas_bottom);
+        make.top.equalTo(button.mas_bottom).offset(30);
     }];
     self.count = 0;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer2Action) userInfo:nil repeats:YES];

@@ -17,11 +17,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
-//    获取手机型号
-    [Global shareInstance].iphoneType = [NSString iphoneType];
-    NSLog(@"%@",[Global shareInstance].iphoneType);
-    
     
     TabBarViewController *tab = [[TabBarViewController alloc] init];
     self.window.rootViewController = tab;
